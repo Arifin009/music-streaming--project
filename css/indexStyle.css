@@ -18,6 +18,12 @@ header .logo {
     font-weight: bold;
 }
 
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 header nav ul {
     list-style: none;
     display: flex;
@@ -29,6 +35,33 @@ header nav ul {
 header nav ul li a {
     text-decoration: none;
     color: #ffffff;
+}
+
+header nav .search-form {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+header nav .search-form input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    width: 300px;
+}
+
+header nav .search-form button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #00848a;
+    cursor: pointer;
+}
+
+header nav .search-form button i {
+    font-size: 14px;
 }
 
 header .auth-buttons {
@@ -111,8 +144,8 @@ section h2 {
     padding: 20px;
     border-radius: 8px;
     text-align: center;
-    position: relative; 
-    max-width:250px;
+    position: relative;
+    max-width: 250px;
 }
 
 .playlist img,
@@ -130,13 +163,13 @@ section h2 {
 .album p,
 .radio p,
 .chart p {
-   position: absolute; /* Set position to absolute */
+    position: absolute; /* Set position to absolute */
     bottom: 0; /* Adjust bottom spacing as needed */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Center horizontally */
     font-size: 16px;
-   
 }
+
 footer {
     background-color: #181818;
     padding: 40px 20px;
